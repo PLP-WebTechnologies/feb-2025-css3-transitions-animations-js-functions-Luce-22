@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions, Animations & JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>This is my Week 8 Assignment!</h1>
+        <p>Thou shall not hate on Comic Sans!</p>
+    </header>
+
+    <main>
+        <section class="animation-section">
+            <h2>CSS Animations</h2>
+            <p>How many times can you spin the box before it gives you the twisty twirlies? (that's chinese for dizzy spells) </p>
+            <div class="animated-box" id="myAnimatedBox"></div>
+            <button id="triggerAnimation">SPIN ME!</button>
+        </section>
+
+        <section class="transition-section">
+            <h2>CSS Transitions</h2>
+            <p>PS: My piggy's name is Paco! Paco has two sides, and only in the dark shall the other be revealed :)</p>
+            <div id="confetti-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></div>
+            <button class="transition-button" id="confettiButton">Hover Me!</button>
+            <div class="image-container">
+                <img src="piggy.jpg" alt="Placeholder Image" class="transition-image" id="spinImage">
+            </div>
+        </section>
+
+        <section class="preferences-section">
+            <h2>Welcome to the internet! What do you prefer?</h2>
+            <p>Would you like a spooky background or a bright and snowy white?</p>
+            <label for="themeSelect">Pick yours:</label>
+            <select id="themeSelect">
+                <option value="light">Snowy</option>
+                <option value="dark">Spooky</option>
+            </select>
+            <button id="savePreferences">Save Preferences</button>
+            <p>It appears you like:<span id="currentTheme"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
