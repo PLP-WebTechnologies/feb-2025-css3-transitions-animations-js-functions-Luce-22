@@ -37,7 +37,7 @@ const darkThemeImageSrc ='piggy.jpg';
             body.classList.add('dark-theme');
             themeSelect.value = 'dark';
             
-            currentThemeSpan.textContent = "It appears you like the spooky stuff! How goth🦇;)";
+            currentThemeSpan.textContent = "the spooky stuff! How goth🦇;)";
             spinImage.src = darkThemeImageSrc;
         } else {
             body.classList.remove('dark-theme');
